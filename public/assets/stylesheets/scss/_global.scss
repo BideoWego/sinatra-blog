@@ -1,0 +1,342 @@
+// ----------------------------------------
+// Global
+// ----------------------------------------
+
+// ----------------------------------------
+// HTML Elements
+// ----------------------------------------
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $light;
+
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: 
+    radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://s3.amazonaws.com/bw.bideowego/images/bideowego-banner-3.jpg');
+}
+
+a {
+  color: $light;
+
+  &:hover,
+  &:focus
+  &:active {
+    color: $primary;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+// ----------------------------------------
+// Text
+// ----------------------------------------
+
+.text-dark {
+  color: $dark;
+
+  a {
+    color: $primary;
+    font-weight: bold;
+    
+    &:hover,
+    &:focus
+    &:active {
+      color: darken($primary, 10%);
+      outline: none;
+      text-decoration: none;
+    }
+  }
+
+}
+
+// ----------------------------------------
+// Nav
+// ----------------------------------------
+
+.navbar-default {
+  border-color: $primary;
+}
+.navbar,
+.navbar-default {
+  border-radius: 0;
+
+  background: $primary;
+  color: $light;
+
+  a {
+    font-size: 1.25em;
+  }
+
+  .navbar-nav .open .dropdown-menu > li > a:active,
+  .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav > .open > a,
+  .navbar-nav > .open > a:active,
+  .navbar-nav > .open > a:focus,
+  .navbar-nav > .open > a:hover,
+  .navbar-nav > li > a:active,
+  .navbar-nav > li > a:focus,
+  .navbar-nav > li > a:hover,
+  .dropdown-menu > li > a:active,
+  .dropdown-menu > li > a:focus,
+  .dropdown-menu > li > a:hover,
+  .navbar-brand:active,
+  .navbar-brand:focus,
+  .navbar-brand:hover,
+  a:active,
+  a:hover,
+  a:focus {
+    color: darken($primary, 35%);
+  }
+
+  .dropdown-menu {
+    padding: 0 0 5px 0;
+
+    a {
+      border-left: 0 solid $primary;
+      padding: 8px;
+
+      &:hover {
+        border-left-width: 4px;
+        transition: border-width 300ms;
+      }
+    }
+  }
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: $light;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $light;
+}
+.navbar-default .navbar-toggle {
+  border-color: $light;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($primary, 5%);
+  }
+}
+
+.navbar-brand {
+  text-indent: 8px;
+}
+.navbar-logo {
+  line-height: 48px;
+  img {
+    max-width: 32px;
+  }
+}
+
+// ----------------------------------------
+// Pagination
+// ----------------------------------------
+
+.pagination > li > a {
+  font-size: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: transparent;
+  color: $light;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $primary;
+    color: $light;
+  }
+}
+
+// ----------------------------------------
+// Header
+// ----------------------------------------
+
+
+.site-title {
+  @include transition-border-x;
+  font-size: 96px;
+  text-align: center;
+}
+
+// ----------------------------------------
+// Footer
+// ----------------------------------------
+
+
+#main-footer {
+  margin-top: 64px;
+  margin-bottom: 128px;
+
+  .site-map,
+  .copyright,
+  .social-links {
+    text-align: center;
+    a {
+      @include transition-border-y;
+    }
+  }
+
+  .site-map {
+    a:before,
+    a:after {
+      content: "\0000a0";
+    }
+  }
+
+  .site-map,
+  .copyright {
+    font-size: 24px;
+  }
+
+  .social-links  {
+    margin-top: 16px;
+    font-size: 64px;
+  }
+}
+
+// ----------------------------------------
+// All articles
+// ----------------------------------------
+
+#about,
+#blog-post,
+#projects-show,
+#games-show {
+  article {
+    max-width: 512px;
+    margin: 0 auto;
+
+    p {
+      text-indent: 2em;
+    }
+  }
+}
+
+// ----------------------------------------
+// All Index Pages
+// ----------------------------------------
+
+#games-index,
+#projects-index,
+#blog-index,
+#blog-archive,
+#blog-categories,
+#blog-tags {
+  .post,
+  .game,
+  .project {
+    margin-bottom: 64px;
+  }
+
+  .media-object {
+    max-width: 128px;
+  }
+}
+
+// ----------------------------------------
+// Mobile View
+// ----------------------------------------
+
+@media only screen and (max-width: $tablet-width - 1) {
+
+
+  // ----------------------------------------
+  // Mobile Navbar
+  // ----------------------------------------
+
+  .navbar-default .navbar-nav > li > a {
+    color: $light;
+
+    font-size: 1.25em;
+    border-left: 0 solid $light;
+    padding: 8px;
+
+    &:hover {
+      border-left-width: 4px;
+      transition: border-width 300ms;
+    }
+  }
+  .navbar-brand {
+    text-indent: -8px;
+  }
+  .navbar-logo {
+    text-indent: 15px;
+  }
+  .nav .open > a,
+  .nav .open > a:focus,
+  .nav .open > a:hover {
+    border-color: $primary;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: $light;
+  }
+  .navbar,
+  .navbar-default {
+    .dropdown-menu {
+      a {
+        border-left: 0 solid $light;
+      }
+    }
+  }
+
+
+  // ----------------------------------------
+  // Mobile Site Title
+  // ----------------------------------------
+
+  .site-title {
+    font-size: 48px;
+  }
+
+  // ----------------------------------------
+  // Mobile Index Media Object
+  // ----------------------------------------
+
+  #blog-index,
+  #blog-categories,
+  #blog-tags,
+  #blog-archive,
+  #games-index,
+  #projects-index {
+    .media-object {
+      max-width: 64px;
+    }
+  }
+
+  
+  // ----------------------------------------
+  // Mobile Footer Icons
+  // ----------------------------------------
+
+  #main-footer .social-links {
+    letter-spacing: 8px;
+    font-size: 48px;
+  }
+}
+
+
+
+
+
+

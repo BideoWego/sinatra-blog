@@ -1,0 +1,37 @@
+---
+
+variables:
+  -
+    key: site_title
+    value: &site_title Bideo Wego
+  -
+    key: nav
+    value:
+      site_title: *site_title
+      logo_url: https://s3.amazonaws.com/bw.bideowego/images/bw.png
+      dropdown:
+        title: Blog
+        pages:
+          -
+            title: Index
+            uri: blog
+          -
+            title: Archive
+            uri: blog/archive
+          -
+            title: Categories
+            uri: blog/categories
+          -
+            title: Tags
+            uri: blog/tags
+      pages:
+        -
+          title: Projects
+          uri: projects
+        -
+          title: Games
+          uri: games
+        -
+          title: About
+          uri: about
+

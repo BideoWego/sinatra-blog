@@ -1,0 +1,12 @@
+// ----------------------------------------
+// Blog Index
+// ----------------------------------------
+
+
+#blog-archive {
+  .archive-toggle {
+    @include transition-border-y;
+    text-indent: 1em;
+  }
+}
+

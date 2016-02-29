@@ -1,0 +1,55 @@
+// ----------------------------------------
+// Home
+// ----------------------------------------
+
+// Responsive background image with
+// radial gradient
+#home {
+
+  // Center all text
+  .tag-line,
+  .nav-container {
+    text-align: center;
+  }
+
+  // Desktop view has top margins
+  main,
+  .nav-container {
+    margin-top: 16px;
+  }
+
+  .nav-container .nav {
+    a {
+      font-size: 32px;
+    }
+  }
+  .tag-line {
+    font-size: 48px;
+  }
+
+  .nav-container a {
+    @include transition-border-x;
+  }
+}
+
+@media only screen and (max-width: $tablet-width - 1) {
+  #home {
+    // Mobile view has bottom margin
+    main {
+      margin-bottom: 64px;
+    }
+    // Remove desktop view top margins
+    main,
+    .nav-container,
+    .social-links {
+      margin-top: 0;
+    }
+
+    // Reduce image width and center
+    .image-container {
+      margin: 0 auto;
+      max-width: $phone-width / 2;
+    }
+  }
+}
+

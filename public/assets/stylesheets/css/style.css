@@ -1,0 +1,301 @@
+#home .tag-line,
+#home .nav-container {
+  text-align: center; }
+#home main,
+#home .nav-container {
+  margin-top: 16px; }
+#home .nav-container .nav a {
+  font-size: 32px; }
+#home .tag-line {
+  font-size: 48px; }
+#home .nav-container a {
+  border: 0 solid #eee; }
+  #home .nav-container a:hover, #home .nav-container a:focus, #home .nav-container a:active {
+    background: transparent;
+    transition: border-width 300ms ease-in-out; }
+  #home .nav-container a:hover, #home .nav-container a:focus, #home .nav-container a:active {
+    border-left-width: 4px;
+    border-right-width: 4px; }
+
+@media only screen and (max-width: 767px) {
+  #home main {
+    margin-bottom: 64px; }
+  #home main,
+  #home .nav-container,
+  #home .social-links {
+    margin-top: 0; }
+  #home .image-container {
+    margin: 0 auto;
+    max-width: 160px; } }
+#blog-archive .archive-toggle {
+  border: 0 solid #eee;
+  text-indent: 1em; }
+  #blog-archive .archive-toggle:hover, #blog-archive .archive-toggle:focus, #blog-archive .archive-toggle:active {
+    background: transparent;
+    transition: border-width 300ms ease-in-out; }
+  #blog-archive .archive-toggle:hover, #blog-archive .archive-toggle:focus, #blog-archive .archive-toggle:active {
+    border-top-width: 4px;
+    border-bottom-width: 4px; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #eee;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("https://s3.amazonaws.com/bw.bideowego/images/bideowego-banner-3.jpg"); }
+
+a {
+  color: #eee; }
+  a:hover, a:focus
+  a:active {
+    color: #5996D6;
+    outline: none;
+    text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.5; }
+
+.text-dark {
+  color: #111; }
+  .text-dark a {
+    color: #5996D6;
+    font-weight: bold; }
+    .text-dark a:hover, .text-dark a:focus
+    .text-dark a:active {
+      color: #327cca;
+      outline: none;
+      text-decoration: none; }
+
+.navbar-default {
+  border-color: #5996D6; }
+
+.navbar,
+.navbar-default {
+  border-radius: 0;
+  background: #5996D6;
+  color: #eee; }
+  .navbar a,
+  .navbar-default a {
+    font-size: 1.25em; }
+  .navbar .navbar-nav .open .dropdown-menu > li > a:active,
+  .navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar .navbar-nav > .open > a,
+  .navbar .navbar-nav > .open > a:active,
+  .navbar .navbar-nav > .open > a:focus,
+  .navbar .navbar-nav > .open > a:hover,
+  .navbar .navbar-nav > li > a:active,
+  .navbar .navbar-nav > li > a:focus,
+  .navbar .navbar-nav > li > a:hover,
+  .navbar .dropdown-menu > li > a:active,
+  .navbar .dropdown-menu > li > a:focus,
+  .navbar .dropdown-menu > li > a:hover,
+  .navbar .navbar-brand:active,
+  .navbar .navbar-brand:focus,
+  .navbar .navbar-brand:hover,
+  .navbar a:active,
+  .navbar a:hover,
+  .navbar a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:active,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:active,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > li > a:active,
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .dropdown-menu > li > a:active,
+  .navbar-default .dropdown-menu > li > a:focus,
+  .navbar-default .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-brand:active,
+  .navbar-default .navbar-brand:focus,
+  .navbar-default .navbar-brand:hover,
+  .navbar-default a:active,
+  .navbar-default a:hover,
+  .navbar-default a:focus {
+    color: #193d64; }
+  .navbar .dropdown-menu,
+  .navbar-default .dropdown-menu {
+    padding: 0 0 5px 0; }
+    .navbar .dropdown-menu a,
+    .navbar-default .dropdown-menu a {
+      border-left: 0 solid #5996D6;
+      padding: 8px; }
+      .navbar .dropdown-menu a:hover,
+      .navbar-default .dropdown-menu a:hover {
+        border-left-width: 4px;
+        transition: border-width 300ms; }
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #eee; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #eee; }
+
+.navbar-default .navbar-toggle {
+  border-color: #eee; }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+    background-color: #4589d1; }
+
+.navbar-brand {
+  text-indent: 8px; }
+
+.navbar-logo {
+  line-height: 48px; }
+  .navbar-logo img {
+    max-width: 32px; }
+
+.pagination > li > a {
+  font-size: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: transparent;
+  color: #eee; }
+  .pagination > li > a:hover, .pagination > li > a:active, .pagination > li > a:focus {
+    background-color: #5996D6;
+    color: #eee; }
+
+.site-title {
+  border: 0 solid #eee;
+  font-size: 96px;
+  text-align: center; }
+  .site-title:hover, .site-title:focus, .site-title:active {
+    background: transparent;
+    transition: border-width 300ms ease-in-out; }
+  .site-title:hover, .site-title:focus, .site-title:active {
+    border-left-width: 4px;
+    border-right-width: 4px; }
+
+#main-footer {
+  margin-top: 64px;
+  margin-bottom: 128px; }
+  #main-footer .site-map,
+  #main-footer .copyright,
+  #main-footer .social-links {
+    text-align: center; }
+    #main-footer .site-map a,
+    #main-footer .copyright a,
+    #main-footer .social-links a {
+      border: 0 solid #eee; }
+      #main-footer .site-map a:hover, #main-footer .site-map a:focus, #main-footer .site-map a:active,
+      #main-footer .copyright a:hover,
+      #main-footer .copyright a:focus,
+      #main-footer .copyright a:active,
+      #main-footer .social-links a:hover,
+      #main-footer .social-links a:focus,
+      #main-footer .social-links a:active {
+        background: transparent;
+        transition: border-width 300ms ease-in-out; }
+      #main-footer .site-map a:hover, #main-footer .site-map a:focus, #main-footer .site-map a:active,
+      #main-footer .copyright a:hover,
+      #main-footer .copyright a:focus,
+      #main-footer .copyright a:active,
+      #main-footer .social-links a:hover,
+      #main-footer .social-links a:focus,
+      #main-footer .social-links a:active {
+        border-top-width: 4px;
+        border-bottom-width: 4px; }
+  #main-footer .site-map a:before,
+  #main-footer .site-map a:after {
+    content: "\0000a0"; }
+  #main-footer .site-map,
+  #main-footer .copyright {
+    font-size: 24px; }
+  #main-footer .social-links {
+    margin-top: 16px;
+    font-size: 64px; }
+
+#about article,
+#blog-post article,
+#projects-show article,
+#games-show article {
+  max-width: 512px;
+  margin: 0 auto; }
+  #about article p,
+  #blog-post article p,
+  #projects-show article p,
+  #games-show article p {
+    text-indent: 2em; }
+
+#games-index .post,
+#games-index .game,
+#games-index .project,
+#projects-index .post,
+#projects-index .game,
+#projects-index .project,
+#blog-index .post,
+#blog-index .game,
+#blog-index .project,
+#blog-archive .post,
+#blog-archive .game,
+#blog-archive .project,
+#blog-categories .post,
+#blog-categories .game,
+#blog-categories .project,
+#blog-tags .post,
+#blog-tags .game,
+#blog-tags .project {
+  margin-bottom: 64px; }
+#games-index .media-object,
+#projects-index .media-object,
+#blog-index .media-object,
+#blog-archive .media-object,
+#blog-categories .media-object,
+#blog-tags .media-object {
+  max-width: 128px; }
+
+@media only screen and (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a {
+    color: #eee;
+    font-size: 1.25em;
+    border-left: 0 solid #eee;
+    padding: 8px; }
+    .navbar-default .navbar-nav > li > a:hover {
+      border-left-width: 4px;
+      transition: border-width 300ms; }
+
+  .navbar-brand {
+    text-indent: -8px; }
+
+  .navbar-logo {
+    text-indent: 15px; }
+
+  .nav .open > a,
+  .nav .open > a:focus,
+  .nav .open > a:hover {
+    border-color: #5996D6; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #eee; }
+
+  .navbar .dropdown-menu a,
+  .navbar-default .dropdown-menu a {
+    border-left: 0 solid #eee; }
+
+  .site-title {
+    font-size: 48px; }
+
+  #blog-index .media-object,
+  #blog-categories .media-object,
+  #blog-tags .media-object,
+  #blog-archive .media-object,
+  #games-index .media-object,
+  #projects-index .media-object {
+    max-width: 64px; }
+
+  #main-footer .social-links {
+    letter-spacing: 8px;
+    font-size: 48px; } }
+
+/*# sourceMappingURL=style.css.map */

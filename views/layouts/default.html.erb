@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= erb :'shared/meta.html', :locals => {
+      :site_title => site_title,
+      :title => title
+    } %>
+
+    <%= erb :'shared/assets.html' %>
+
+    <%= yield_content :head %>
+  </head>
+  <body id="<%= css_id %>">
+    <%= erb :'shared/nav.html', :locals => { :nav => nav } %>
+    <%= yield_content :flash %>
+
+    <main class="container">
+      
+      <%= yield %>
+
+    </main>
+
+    <%= erb :'shared/footer.html' %>
+    <%= yield_content :foot %>
+  </body>
+</html>
+
+
+

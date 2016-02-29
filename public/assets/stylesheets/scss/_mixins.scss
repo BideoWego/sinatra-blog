@@ -1,0 +1,35 @@
+// ----------------------------------------
+// Settings
+// ----------------------------------------
+
+@mixin transition-border {
+  border: 0 solid $light;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+    transition: border-width 300ms ease-in-out;
+  }
+}
+
+@mixin transition-border-x {
+  @include transition-border;
+  &:hover,
+  &:focus,
+  &:active {
+    border-left-width: 4px;
+    border-right-width: 4px;
+  }
+}
+
+@mixin transition-border-y {
+  @include transition-border;
+  &:hover,
+  &:focus,
+  &:active {
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+  }
+}
+

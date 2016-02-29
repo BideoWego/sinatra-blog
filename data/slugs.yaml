@@ -1,0 +1,74 @@
+---
+
+slugs:
+  # ----------------------------------------
+  # Pages
+  # ----------------------------------------
+  -
+    uri: ''
+    title: Home
+    view: pages/home.html
+    css_id: home
+  -
+    uri: about
+    title: About
+    view: pages/about.html
+    css_id: about
+  # ----------------------------------------
+  # Projects
+  # ----------------------------------------
+  -
+    uri: projects
+    title: Projects
+    view: projects/index.html
+    css_id: projects-index
+  -
+    uri: projects/projects-show
+    title: Project Show
+    view: projects/show.html
+    css_id: projects-show
+  # ----------------------------------------
+  # Games
+  # ----------------------------------------
+  -
+    uri: games
+    title: Games
+    view: games/index.html
+    css_id: games-index
+  -
+    uri: games/games-show
+    title: Game Show
+    view: games/show.html
+    css_id: games-show
+  # ----------------------------------------
+  # Blog
+  # ----------------------------------------
+  -
+    uri: blog
+    title: Blog
+    view: blog/index.html
+    css_id: blog-index
+  -
+    uri: blog/archive
+    title: Blog Archive
+    view: blog/archive.html
+    css_id: blog-archive
+  -
+    uri: blog/categories
+    title: Blog Categories
+    view: blog/categories.html
+    css_id: blog-categories
+  -
+    uri: blog/tags
+    title: Blog Tags
+    view: blog/tags.html
+    css_id: blog-tags
+  # ----------------------------------------
+  # Posts
+  # ----------------------------------------
+  -
+    uri: hello-world
+    title: Hello World
+    view: posts/hello-world.markdown
+    css_id: post-show
+
