@@ -1,8 +1,13 @@
+<% content_for :head do %>
+  <!-- SWFObject -->
+  <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<% end %>
+
 <!-- Header Site Title -->
 <header class="page-header">
   <h1 class="site-title">
     <a href="/games/games-show">
-      Game Show
+      <%= title %>
     </a>
   </h1>
 </header>
@@ -10,21 +15,35 @@
 <!-- Game -->
 <div class="game row text-dark">
   <div class="col-xs-10 col-xs-offset-1 well">
-    
-    
-    <div style="width: 800px; height: 600px; border: 1px solid #000; margin: 0 auto;"></div>
-    <br>
+
+    <div style="width: 800px; height: 600px; margin: 0 auto;">
+      <div id="game"></div>
+    </div>
 
     <article>
-      <p>This is about the game</p>
+      <h2 class="text-center">
+        <%= title %>
+      </h2>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, qui. Unde eos quae doloribus quasi, dolorum earum dolores! Impedit quam rem optio nisi nostrum voluptatem dolorum tempore fuga consequatur quisquam!</p>
+      <p><%= game['description'] %></p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint architecto sed voluptatibus, aliquam ipsum nisi dolor recusandae nihil magni quis enim. Quasi similique quae neque accusamus! Nemo quos nulla earum.</p>
-      
+      <p><%= game['instructions'] %></p>
     </article>
 
   </div>
 </div><!-- game row -->
+
+
+<script>
+  $(document).ready(function() {
+    swfobject.embedSWF(
+      "<%= game['url'] %>",
+      "game",
+      "800px",
+      "600px",
+      "9"
+    );
+  });
+</script>
 
 

@@ -4,7 +4,7 @@ require 'rdiscount'
 require 'yaml'
 
 
-ROOT_PATH = File.expand_path(File.dirname(__FILE__)) + '/'
+ROOT_PATH = "#{File.expand_path(File.dirname(__FILE__))}/"
 DATA_PATH = "#{ROOT_PATH}data/"
 VIEWS_PATH = "#{ROOT_PATH}views/"
 
@@ -15,6 +15,10 @@ helpers do
     classes['notice'] = 'info'
     classes['error'] = 'danger'
     classes[key.to_s]
+  end
+
+  def md(text)
+    RDiscount.new(text).to_html
   end
 end
 
@@ -54,7 +58,7 @@ get '/*' do
 
   if view && view.match(/\.markdown/)
     markdown = File.read("#{VIEWS_PATH}#{view}")
-    rendered = RDiscount.new(markdown).to_html
+    rendered = md(markdown)
     locals[:post] = rendered 
     view = :'pages/post.html'
   elsif !view

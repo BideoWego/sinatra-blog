@@ -27,6 +27,11 @@ slugs:
     title: Project Show
     view: projects/show.html
     css_id: projects-show
+  -
+    uri: projects/
+    title:
+    view:
+    css_id: projects-show
   # ----------------------------------------
   # Games
   # ----------------------------------------
@@ -36,10 +41,23 @@ slugs:
     view: games/index.html
     css_id: games-index
   -
-    uri: games/games-show
-    title: Game Show
+    uri: games/geo-space
+    title: Geo-Space
     view: games/show.html
     css_id: games-show
+    game:
+      url: https://s3.amazonaws.com/bw.bideowego/swf/geo-space.swf
+      description: A fun little space shooter I put together in Flash using the Flixel framework.
+      instructions: 'SPACEBAR: fire | UP, DOWN, LEFT, RIGHT: move'
+  -
+    uri: games/tankd
+    title: Tankd
+    view: games/show.html
+    css_id: games-show
+    game:
+      url: https://s3.amazonaws.com/bw.bideowego/swf/tankd.swf
+      description: A top down Tank game I made basically from scratch in Flash with Box2D.
+      instructions: 'X: rocket | SPACEBAR: fire | UP, DOWN, LEFT, RIGHT: move'
   # ----------------------------------------
   # Blog
   # ----------------------------------------
@@ -48,27 +66,54 @@ slugs:
     title: Blog
     view: blog/index.html
     css_id: blog-index
-  -
-    uri: blog/archive
-    title: Blog Archive
-    view: blog/archive.html
-    css_id: blog-archive
-  -
-    uri: blog/categories
-    title: Blog Categories
-    view: blog/categories.html
-    css_id: blog-categories
-  -
-    uri: blog/tags
-    title: Blog Tags
-    view: blog/tags.html
-    css_id: blog-tags
+  # -
+  #   uri: blog/archive
+  #   title: Blog Archive
+  #   view: blog/archive.html
+  #   css_id: blog-archive
+  # -
+  #   uri: blog/categories
+  #   title: Blog Categories
+  #   view: blog/categories.html
+  #   css_id: blog-categories
+  # -
+  #   uri: blog/tags
+  #   title: Blog Tags
+  #   view: blog/tags.html
+  #   css_id: blog-tags
   # ----------------------------------------
   # Posts
   # ----------------------------------------
   -
-    uri: hello-world
-    title: Hello World
-    view: posts/hello-world.markdown
+    uri: reversing-a-linked-list-in-a-single-loop
+    title: Reversing a Linked List in a Single Loop
+    view: posts/reversing-a-linked-list-in-a-single-loop.markdown
     css_id: post-show
+  -
+    uri: time-series-data-with-sql-group-by
+    title: Time Series Date with SQL GROUP BY
+    view: posts/time-series-data-with-sql-group-by.markdown
+    css_id: post-show
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -15,15 +15,15 @@ variables:
           -
             title: Index
             uri: blog
-          -
-            title: Archive
-            uri: blog/archive
-          -
-            title: Categories
-            uri: blog/categories
-          -
-            title: Tags
-            uri: blog/tags
+          # -
+          #   title: Archive
+          #   uri: blog/archive
+          # -
+          #   title: Categories
+          #   uri: blog/categories
+          # -
+          #   title: Tags
+          #   uri: blog/tags
       pages:
         -
           title: Projects
@@ -34,4 +34,15 @@ variables:
         -
           title: About
           uri: about
+  -
+    key: social_networks
+    value:
+      github: '#'
+      soundcloud: '#'
+      facebook: '#'
+      twitter: '#'
+      youtube: '#'
+      googleplus: '#'
+      instagram: '#'
+      linkedin: '#'
 

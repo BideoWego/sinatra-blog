@@ -6,6 +6,8 @@
       :title => title
     } %>
 
+    <%= erb :'shared/favicon.html' %>
+
     <%= erb :'shared/assets.html' %>
 
     <%= yield_content :head %>
@@ -20,7 +22,7 @@
 
     </main>
 
-    <%= erb :'shared/footer.html' %>
+    <%= erb :'shared/footer.html', :locals => { :social_networks => social_networks } %>
     <%= yield_content :foot %>
   </body>
 </html>

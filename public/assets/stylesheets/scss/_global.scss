@@ -26,6 +26,7 @@ body {
 
 a {
   color: $light;
+  border-bottom: 1px solid $primary;
 
   &:hover,
   &:focus
@@ -44,6 +45,15 @@ h5,
 h6 {
   font-weight: 400;
   line-height: 1.5;
+}
+
+p,
+div {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 1.75em;
 }
 
 // ----------------------------------------
